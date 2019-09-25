@@ -11,10 +11,12 @@ class App extends React.Component {
     return (
             <div>
               <AppartementsDiv class="flat-list" flats={flats} />
-              <GoogleMapReact defaultCenter={{lat: 48.884211,
-    lng: 2.34689}} defaultZoom={12}>
+              <div className="map-container">
+                <GoogleMapReact defaultCenter={{lat: 48.884211,
+      lng: 2.34689}} defaultZoom={12}>
+                </GoogleMapReact>
 
-              </GoogleMapReact>
+              </div>
             </div>
             )
   }
