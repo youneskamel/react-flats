@@ -3,6 +3,7 @@ import GoogleMapReact from 'google-map-react';
 import AppartementsDiv from "./AppartementsDiv"
 import Map from "./Map"
 import flats from "../flats"
+import Marker from "./Marker"
 
 console.log(flats)
 
@@ -14,6 +15,7 @@ class App extends React.Component {
               <div className="map-container">
                 <GoogleMapReact defaultCenter={{lat: 48.884211,
       lng: 2.34689}} defaultZoom={12}>
+                  <Marker lat={48.884211} lng={2.34689} />
                 </GoogleMapReact>
 
               </div>
