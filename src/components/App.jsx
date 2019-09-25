@@ -1,4 +1,5 @@
 import React from "react"
+import GoogleMapReact from 'google-map-react';
 import AppartementsDiv from "./AppartementsDiv"
 import Map from "./Map"
 import flats from "../flats"
@@ -9,8 +10,11 @@ class App extends React.Component {
   render() {
     return (
             <div>
-              <AppartementsDiv class="flat-list card-description" flats={flats} />
-              <Map/>
+              <AppartementsDiv class="flat-list" flats={flats} />
+              <GoogleMapReact defaultCenter={{lat: 48.884211,
+    lng: 2.34689}} defaultZoom={12}>
+
+              </GoogleMapReact>
             </div>
             )
   }

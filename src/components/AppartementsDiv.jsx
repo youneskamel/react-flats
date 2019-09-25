@@ -6,7 +6,7 @@ class AppartementsDiv extends React.Component {
     console.log(this.props.flats)
 
     return (
-      <div>
+      <div className="flat-list">
         {this.props.flats.map(flat => <AppartementCard name={flat.name} price={flat.price} priceCurrency={flat.priceCurrency} imageUrl={flat.imageUrl}/>)}
       </div>
     )
